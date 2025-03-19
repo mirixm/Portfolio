@@ -1,0 +1,230 @@
+/* Allgemeine Stile */
+body {
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    text-align: center;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+  }
+  
+  /* Navigation */
+  nav {
+    background-color: white;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    border-radius: 20px;
+  }
+  
+  nav ul li {
+    position: relative;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 10px 15px;
+  }
+  
+  nav a:hover {
+    color: rgb(120, 76, 202);
+  }
+  
+  /* Dropdown */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    min-width: 150px;
+  }
+  
+  .dropdown-content li {
+    text-align: left;
+  }
+  
+  .dropdown-content a {
+    padding: 10px;
+    display: block;
+    color: black;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: lightgrey;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Section Stile */
+  section {
+    padding: 80px 0;
+    margin-top: 80px;
+  }
+  
+  /* Hero Section */
+  .hero {
+    padding: 150px 20px;
+  }
+  
+  .hero h1 {
+    font-size: 48px;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #222;
+    color: white;
+    padding: 20px 0;
+    margin-top: 50px;
+  }
+  /* Galerie */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.gallery-item img,
+.gallery-item video {
+    width: 100%;
+    height: auto;
+    border-radius: 4%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Video-Sektion */
+.video-section {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 100px;
+}
+
+video {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 20px;
+}
+
+#school .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  #school .gallery video {
+    width: 100%;
+    border-radius: 20px;
+  }
+
+#about {
+    background: white;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.5;}
+
+#art {
+        background: white;
+        text-align: center;
+        max-width: 900px;
+        margin: 0 auto;
+        line-height: 1.5;}
+
+#art .gallery {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#pixelart .gallery {
+    display: grid;
+    max-width: 1200px;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+#pixelart .gallery-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+        
+
+ #airplane {
+            position: absolute;
+            width: 60px; /* Größe des Airplanes */
+            pointer-events: none; /* Damit man nicht draufklicken kann */
+            transform-origin: center;
+            z-index: 999;
+          }
+
+/* Tabelle Styling */
+.table-container {
+  overflow-x: auto;
+  max-width: 100%;
+  margin: 20px auto;
+}
+
+table {
+  width: 100%;
+  max-width: 800px;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.projects {
+  overflow-x: auto;
+  max-width: 100%;
+  margin: 20px auto;
+}
+
+p {
+  width: 100%;
+  max-width: 800px;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
